@@ -41,14 +41,14 @@ This runs `check_images.py` with all three architectures against the images in `
 
 Results from running `check_images.py` with each of the three CNN architectures on the 40 sample pet images (30 dog images, 10 non-dog images):
 
-| Metric | AlexNet | ResNet | VGG |
-|---|---|---|---|
-| Label match (%) | 75.0 | 82.5 | 87.5 |
-| Correctly classified as dog/not-dog (%) | 100.0 | 100.0 | 100.0 |
-| Correctly classified breed (%) | 80.0 | 90.0 | 93.3 |
-| Correctly classified not-dog (%) | 100.0 | 90.0 | 100.0 |
+| Metric                           | AlexNet | ResNet | VGG   |
+| -------------------------------- | ------- | ------ | ----- |
+| Label match (%)                  | 75.0    | 82.5   | 87.5  |
+| Correctly classified dog (%)     | 100.0   | 100.0  | 100.0 |
+| Correctly classified breed (%)   | 80.0    | 90.0   | 93.3  |
+| Correctly classified not-dog (%) | 100.0   | 90.0   | 100.0 |
 
-**Objective 1** (dog vs. not-dog): both VGG and AlexNet correctly classify images as "dog" or "not-a-dog" 100% of the time; ResNet reaches 90%.
+**Objective 1** (dog vs. not-dog): both VGG and AlexNet correctly classify images as "dog" or "not-a-dog" 100% of the time; ResNet reaches just 90% accuracy when classifying images as "not-a-dog".
 
 **Objective 2** (breed classification): VGG performs best, correctly identifying the dog breed over 90% of the time.
 
